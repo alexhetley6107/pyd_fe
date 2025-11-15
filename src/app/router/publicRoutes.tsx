@@ -1,10 +1,10 @@
 import { lazy } from "react";
 import type { RouteObject } from "react-router-dom";
-import { RouterNames } from "../../shared/constants";
-import { AuthLayout } from "../layouts/AuthLayout";
+import { RouterNames } from "@/shared/constants";
+import { AuthLayout } from "@/app/layouts/AuthLayout";
 
-const Login = lazy(() => import("../../pages/Login"));
-const NotFound = lazy(() => import("../../pages/NotFound"));
+const Login = lazy(() => import("@/pages/Login"));
+const NotFound = lazy(() => import("@/pages/NotFound"));
 
 export const publicRoutes: RouteObject[] = [
   {

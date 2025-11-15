@@ -1,7 +1,9 @@
 import type { RouteObject } from "react-router-dom";
-import { MainLayout } from "../layouts/MainLayout";
-import { RouterNames } from "../../shared/constants";
-import Dashboard from "../../pages/Dashboard";
+import { MainLayout } from "@/app/layouts/MainLayout";
+import { RouterNames } from "@/shared/constants";
+import { lazy } from "react";
+
+const Dashboard = lazy(() => import("@/pages/Dashboard"));
 
 export const privateRoutes: RouteObject[] = [
   {
