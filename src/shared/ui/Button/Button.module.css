@@ -10,8 +10,15 @@
   font-size: 16px;
   cursor: pointer;
   font-weight: 600;
+  height: 40px;
 
   &.full {
     width: 100%;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }

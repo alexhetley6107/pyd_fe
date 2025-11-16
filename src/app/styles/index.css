@@ -1,2 +1,7 @@
 @import "./reset.css";
 @import "./vars.css";
+
+.body {
+  background-color: var(--blur-bg);
+  color: var(--primary-text);
+}

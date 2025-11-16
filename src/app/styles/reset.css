@@ -19,8 +19,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
-  color: #000;
 }
 
 /* Remove default styles for common elements */
