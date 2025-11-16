@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/husky.sh"
+
+commit_msg_file="$1"
+commit_msg=$(head -n 1 "$commit_msg_file")
+
+prefix="[PYD] "
+
+if [ "${commit_msg#"$prefix"}" = "$commit_msg" ]; then
+  echo "❌ Commit message must start with: $prefix"
+  echo "Your message:"
+  echo "  $commit_msg"
+  exit 1
+fi
+
+exit 0
