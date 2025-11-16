@@ -2,6 +2,6 @@
 @import "./vars.css";
 
 .body {
-  background-color: var(--blur-bg);
-  color: var(--primary-text);
+  background-color: var(---bg-color);
+  color: var(--text-color);
 }

@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   height: 100svh;
-
   background-color: var(--blur-bg);
+  position: relative;
 
   .container {
     display: flex;
@@ -12,9 +12,15 @@
     min-height: 500px;
     min-width: 300px;
 
-    background-color: white;
+    background-color: var(--bg-color);
     padding: 30px 20px;
     border-radius: 10px;
     box-shadow: var(--shadow);
+  }
+
+  .switcher {
+    position: absolute;
+    top: 14px;
+    right: 14px;
   }
 }
