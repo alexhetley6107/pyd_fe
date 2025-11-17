@@ -1,10 +1,6 @@
-import s from "./ThemeSwitcher.module.css";
-import { toggleTheme } from "../lib";
+import { isDarkTheme, toggleTheme } from "../lib";
+import { Switch } from "@/shared/ui";
 
 export const ThemeSwitch = () => {
-  return (
-    <div className={s.switcher} onClick={toggleTheme}>
-      SWITCH
-    </div>
-  );
+  return <Switch checked={isDarkTheme()} onToggle={toggleTheme} />;
 };
