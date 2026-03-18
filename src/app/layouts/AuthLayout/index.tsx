@@ -1,17 +1,13 @@
-import { ThemeSwitch } from "@/features";
-import s from "./AuthLayout.module.css";
-import { Outlet } from "react-router-dom";
+import { Paper } from '@mui/material';
+import s from './AuthLayout.module.css';
+import { Outlet } from 'react-router-dom';
 
 export const AuthLayout = () => {
   return (
     <div className={s.wrapper}>
-      <div className={s.switcher}>
-        <ThemeSwitch />
-      </div>
-
-      <div className={s.container}>
+      <Paper className={s.container} elevation={3} sx={{ borderRadius: '8px' }}>
         <Outlet />
-      </div>
+      </Paper>
     </div>
   );
 };

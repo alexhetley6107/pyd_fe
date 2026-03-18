@@ -1,7 +1,7 @@
-import { createBrowserRouter } from "react-router-dom";
-import { GlobalLayout } from "../layouts/GlobalLayout";
-import { publicRoutes } from "./publicRoutes";
-import { privateRoutes } from "./privateRoures";
+import { createBrowserRouter } from 'react-router-dom';
+import { publicRoutes } from './publicRoutes';
+import { privateRoutes } from './privateRoutes';
+import { GlobalLayout } from '../layouts/GlobalLayout';
 
 export const router = createBrowserRouter([
   {

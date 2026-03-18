@@ -1,15 +1,14 @@
-import { lazy } from "react";
-import type { RouteObject } from "react-router-dom";
-import { RouterNames } from "@/shared/constants";
-import { AuthLayout } from "@/app/layouts/AuthLayout";
-import { CheckAuth } from "@/app/layouts/CheckAuth";
+import { lazy } from 'react';
+import type { RouteObject } from 'react-router-dom';
+import { RouterNames } from '@/shared/constants';
+import { AuthLayout } from '@/app/layouts/AuthLayout';
+import { CheckAuth } from '@/app/layouts/CheckAuth';
 
-const NotFound = lazy(() => import("@/pages/NotFound"));
-const Login = lazy(() => import("@/pages/Login"));
-const Signup = lazy(() => import("@/pages/Signup"));
-
-const ForgotPassword = lazy(() => import("@/pages/ForgotPassword"));
-const ResetPassword = lazy(() => import("@/pages/ResetPassword"));
+const Login = lazy(() => import('@/pages/Login'));
+const Signup = lazy(() => import('@/pages/Signup'));
+const ForgotPassword = lazy(() => import('@/pages/ForgotPassword'));
+const ResetPassword = lazy(() => import('@/pages/ResetPassword'));
+const NotFound = lazy(() => import('@/pages/NotFound'));
 
 export const publicRoutes: RouteObject[] = [
   {
@@ -39,7 +38,7 @@ export const publicRoutes: RouteObject[] = [
     element: <CheckAuth />,
   },
   {
-    path: "*",
+    path: '*',
     element: <NotFound />,
   },
 ];

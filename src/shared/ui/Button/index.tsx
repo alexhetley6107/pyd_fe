@@ -1,24 +1,20 @@
-import { type ButtonHTMLAttributes, type FC } from "react";
-import s from "./Button.module.css";
-import cn from "classnames";
-import { Spinner } from "../Spinner";
+import MuiButton, { type ButtonProps } from '@mui/material/Button';
 
-type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
-  loading?: boolean;
-  full?: boolean;
-};
+type Props = ButtonProps;
 
-export const Button: FC<Props> = ({ loading, full, children, ...props }) => {
-  const buttonClasses = cn({
-    [s.button]: true,
-    [s.disabled]: props.disabled,
-    [s.full]: full,
-  });
+export const Button = ({ children, ...props }: Props) => {
   return (
-    <button className={buttonClasses} {...props}>
-      {!loading && children}
-
-      {loading && <Spinner />}
-    </button>
+    <MuiButton
+      variant="contained"
+      disableRipple
+      {...props}
+      sx={{
+        backgroundColor: 'black',
+        borderRadius: '6px',
+        height: '42px',
+      }}
+    >
+      {children}
+    </MuiButton>
   );
 };

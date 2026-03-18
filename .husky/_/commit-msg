@@ -1,6 +1,3 @@
-#!/usr/bin/env sh
-. "$(dirname "$0")/husky.sh"
-
 commit_msg_file="$1"
 commit_msg=$(head -n 1 "$commit_msg_file")
 

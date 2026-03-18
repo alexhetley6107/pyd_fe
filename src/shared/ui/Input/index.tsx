@@ -1,17 +1,17 @@
-import type { ChangeEventHandler, FC, InputHTMLAttributes } from "react";
-import s from "./Input.module.css";
+import TextField, { type TextFieldProps } from '@mui/material/TextField';
 
-type Props = InputHTMLAttributes<HTMLInputElement> & {
-  title?: string;
-  value: string;
-  onChange: ChangeEventHandler<HTMLInputElement>;
-};
+type Props = TextFieldProps;
 
-export const Input: FC<Props> = ({ title, value, onChange }) => {
+export const Input = ({ ...props }: Props) => {
   return (
-    <div className={s.wrapper}>
-      <p>{title}</p>
-      <input value={value} onChange={onChange} />
-    </div>
+    <TextField
+      {...props}
+      sx={{}}
+      slotProps={{
+        htmlInput: {
+          sx: { padding: '8px 8px', height: '28px' },
+        },
+      }}
+    />
   );
 };

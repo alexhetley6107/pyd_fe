@@ -1,11 +1,9 @@
-import { Button } from "@/shared/ui";
+import { Button } from '@/shared/ui';
 
 const Signup = () => {
   return (
     <div>
-      <Button full onClick={() => console.log("Signup")}>
-        Signup
-      </Button>
+      <Button onClick={() => console.log('Signup')}>Signup</Button>
     </div>
   );
 };

@@ -5,23 +5,15 @@
   height: 100svh;
   background-color: var(--blur-bg);
   position: relative;
+}
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 500px;
-    min-width: 300px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+  min-width: 300px;
 
-    background-color: var(--bg-color);
-    padding: 30px 20px;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-  }
-
-  .switcher {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-  }
+  padding: 28px 20px;
+  border-radius: 100px;
 }

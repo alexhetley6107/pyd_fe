@@ -1,4 +1,3 @@
-export * from "./Button";
-export * from "./Spinner";
-export * from "./Switch";
-export * from "./Input";
+export { Button } from './Button';
+export { Input } from './Input';
+export { Title } from './Title';
